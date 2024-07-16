@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Flightscry</string>
+    <string name="stub_md">Departure</string>
+    <string name="flight_info">"Flight number: "</string>
+    <string name="flight_number">DTX285</string>
+    <string name="flight_info_card">Flight information:</string>
+    <string name="airport_code">CPH</string>
+    <string name="departure_time">15:28</string>
+    <string name="arrival">Arrival</string>
+    <string name="airport_code_arrival">WAW</string>
+    <string name="arrival_time">16:55</string>
+</resources>

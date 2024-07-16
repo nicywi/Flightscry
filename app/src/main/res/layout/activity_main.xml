@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bpkSkyBlue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200px"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/skyscanner_vertical_white" />
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cornerStyle="large"
+        app:elevationLevel="focused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:text="@string/flight_info_card"
+                android:textSize="@dimen/bpkTextXxlSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/bpkSpacingSm">
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/flight_info"
+                    android:textSize="@dimen/bpkTextXlSize" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/flight_number"
+                    android:textSize="@dimen/bpkTextXxxlSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cornerStyle="large"
+        app:elevationLevel="focused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:text="@string/stub_md"
+                android:textSize="@dimen/bpkTextXxlSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/bpkSpacingSm">
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/airport_code"
+                    android:textSize="@dimen/bpkTextXxxlSize" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/departure_time"
+                    android:textSize="@dimen/bpkTextXxxlSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cornerStyle="large"
+        app:elevationLevel="focused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:text="@string/arrival"
+                android:textSize="@dimen/bpkTextXxlSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/bpkSpacingSm">
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/airport_code_arrival"
+                    android:textSize="@dimen/bpkTextXxxlSize" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/arrival_time"
+                    android:textSize="@dimen/bpkTextXxxlSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
